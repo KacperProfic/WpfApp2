@@ -8,23 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-
-        <Canvas x:Name="CanvasTest" Grid.RowSpan="4" Grid.ColumnSpan="3" MouseMove="Canvas_MouseMove" MouseLeftButtonUp="Canvas_MouseLeftButtonUp" MouseLeftButtonDown="Canvas_MouseLeftButtonDown" Background="Aqua"/>
-        <ListBox Name="ListaDoMaloania"  Grid.Column="3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,5,0,5"/>
-
-
+        <Canvas x:Name="CanvasTest" Grid.Column="0" MouseMove="Canvas_MouseMove" MouseLeftButtonDown="Canvas_MouseLeftButtonDown" MouseLeftButtonUp="Canvas_MouseLeftButtonUp" Background="Aqua"/>
+        <ListBox x:Name="ListaDoMaloania" Grid.Column="1" Margin="10,10,10,217" />
+        <Button Content="Clear" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,233,20,0" Click="ClearButton_Click" RenderTransformOrigin="1.14,4.749" Grid.Column="1"/>
     </Grid>
 </Window>
- 
